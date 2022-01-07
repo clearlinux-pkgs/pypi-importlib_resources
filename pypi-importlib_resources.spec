@@ -17,7 +17,7 @@ BuildRequires : buildreq-distutils3
 Provides: importlib_resources
 Provides: importlib_resources-python
 Provides: importlib_resources-python3
-BuildRequires : pluggy
+BuildRequires : pypi(pluggy)
 BuildRequires : py-python
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(setuptools_scm)
@@ -25,7 +25,7 @@ BuildRequires : pypi(wheel)
 BuildRequires : pypi(zipp)
 BuildRequires : pytest
 BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(virtualenv)
 
 %description
 .. image:: https://img.shields.io/pypi/v/importlib_resources.svg
