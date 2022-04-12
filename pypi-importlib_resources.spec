@@ -4,7 +4,7 @@
 #
 Name     : pypi-importlib_resources
 Version  : 5.6.0
-Release  : 12
+Release  : 13
 URL      : https://files.pythonhosted.org/packages/e5/5a/ed1104ccc8d798a22560be48ee93d3f1139418a8e4bb9603c7965b185486/importlib_resources-5.6.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e5/5a/ed1104ccc8d798a22560be48ee93d3f1139418a8e4bb9603c7965b185486/importlib_resources-5.6.0.tar.gz
 Summary  : Read resources from Python packages
@@ -62,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1648353502
+export SOURCE_DATE_EPOCH=1649763054
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
