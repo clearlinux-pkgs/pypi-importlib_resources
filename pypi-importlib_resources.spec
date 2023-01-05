@@ -4,7 +4,7 @@
 #
 Name     : pypi-importlib_resources
 Version  : 5.10.2
-Release  : 29
+Release  : 30
 URL      : https://files.pythonhosted.org/packages/2e/f8/be5c59ff2545362397cbc989f5cd3835326fc4092433d50dfaf21616bc71/importlib_resources-5.10.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/2e/f8/be5c59ff2545362397cbc989f5cd3835326fc4092433d50dfaf21616bc71/importlib_resources-5.10.2.tar.gz
 Summary  : Read resources from Python packages
