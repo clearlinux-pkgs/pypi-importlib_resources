@@ -4,13 +4,13 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-importlib_resources
-Version  : 6.0.0
-Release  : 32
-URL      : https://files.pythonhosted.org/packages/78/1f/65a619c18b0ecd55ac165c7ed119c846051991d01c2cfc0ff7818e4573f0/importlib_resources-6.0.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/78/1f/65a619c18b0ecd55ac165c7ed119c846051991d01c2cfc0ff7818e4573f0/importlib_resources-6.0.0.tar.gz
+Version  : 6.0.1
+Release  : 33
+URL      : https://files.pythonhosted.org/packages/fd/dc/0c5cfbd4df5d6e83de4e64324b370151ee88de25f3c71aea21115f4f77f8/importlib_resources-6.0.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/fd/dc/0c5cfbd4df5d6e83de4e64324b370151ee88de25f3c71aea21115f4f77f8/importlib_resources-6.0.1.tar.gz
 Summary  : Read resources from Python packages
 Group    : Development/Tools
-License  : MIT
+License  : Apache-2.0
 Requires: pypi-importlib_resources-license = %{version}-%{release}
 Requires: pypi-importlib_resources-python = %{version}-%{release}
 Requires: pypi-importlib_resources-python3 = %{version}-%{release}
@@ -58,10 +58,10 @@ python3 components for the pypi-importlib_resources package.
 
 
 %prep
-%setup -q -n importlib_resources-6.0.0
-cd %{_builddir}/importlib_resources-6.0.0
+%setup -q -n importlib_resources-6.0.1
+cd %{_builddir}/importlib_resources-6.0.1
 pushd ..
-cp -a importlib_resources-6.0.0 buildavx2
+cp -a importlib_resources-6.0.1 buildavx2
 popd
 
 %build
@@ -69,7 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1689003005
+export SOURCE_DATE_EPOCH=1691427412
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -94,7 +94,7 @@ popd
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-importlib_resources
-cp %{_builddir}/importlib_resources-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-importlib_resources/0445ed0f69910eeaee036f09a39a13c6e1f37e12 || :
+cp %{_builddir}/importlib_resources-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-importlib_resources/2b8b815229aa8a61e483fb4ba0588b8b6c491890 || :
 pip install --root=%{buildroot} --no-deps --ignore-installed dist/*.whl
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -114,7 +114,7 @@ popd
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/pypi-importlib_resources/0445ed0f69910eeaee036f09a39a13c6e1f37e12
+/usr/share/package-licenses/pypi-importlib_resources/2b8b815229aa8a61e483fb4ba0588b8b6c491890
 
 %files python
 %defattr(-,root,root,-)
