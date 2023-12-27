@@ -7,7 +7,7 @@
 #
 Name     : pypi-importlib_resources
 Version  : 6.1.1
-Release  : 36
+Release  : 37
 URL      : https://files.pythonhosted.org/packages/d4/06/402fb5efbe634881341ff30220798c4c5e448ca57c068108c4582c692160/importlib_resources-6.1.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/d4/06/402fb5efbe634881341ff30220798c4c5e448ca57c068108c4582c692160/importlib_resources-6.1.1.tar.gz
 Summary  : Read resources from Python packages
