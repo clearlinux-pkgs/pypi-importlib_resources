@@ -6,10 +6,10 @@
 # autospec commit: f4bef72
 #
 Name     : pypi-importlib_resources
-Version  : 6.3.1
-Release  : 41
-URL      : https://files.pythonhosted.org/packages/6a/19/97a9211bd1fc5a25080a63f7386a5d9d208c9160ed8681bddc257e522705/importlib_resources-6.3.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/6a/19/97a9211bd1fc5a25080a63f7386a5d9d208c9160ed8681bddc257e522705/importlib_resources-6.3.1.tar.gz
+Version  : 6.3.2
+Release  : 42
+URL      : https://files.pythonhosted.org/packages/cc/d8/9024d77b996e94c115d6b4fb7580742a012f15ecbca2e7f626445a408179/importlib_resources-6.3.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/cc/d8/9024d77b996e94c115d6b4fb7580742a012f15ecbca2e7f626445a408179/importlib_resources-6.3.2.tar.gz
 Summary  : Read resources from Python packages
 Group    : Development/Tools
 License  : Apache-2.0
@@ -60,10 +60,10 @@ python3 components for the pypi-importlib_resources package.
 
 
 %prep
-%setup -q -n importlib_resources-6.3.1
-cd %{_builddir}/importlib_resources-6.3.1
+%setup -q -n importlib_resources-6.3.2
+cd %{_builddir}/importlib_resources-6.3.2
 pushd ..
-cp -a importlib_resources-6.3.1 buildavx2
+cp -a importlib_resources-6.3.2 buildavx2
 popd
 
 %build
@@ -71,7 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1710609206
+export SOURCE_DATE_EPOCH=1710873105
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
