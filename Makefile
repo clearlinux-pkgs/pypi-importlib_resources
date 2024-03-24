@@ -1,5 +1,5 @@
 PKG_NAME := pypi-importlib_resources
-URL = https://files.pythonhosted.org/packages/cc/d8/9024d77b996e94c115d6b4fb7580742a012f15ecbca2e7f626445a408179/importlib_resources-6.3.2.tar.gz
+URL = https://files.pythonhosted.org/packages/c8/9d/6ee73859d6be81c6ea7ebac89655e92740296419bd37e5c8abdb5b62fd55/importlib_resources-6.4.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
